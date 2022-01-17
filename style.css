@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(226, 43%, 10%);
+    max-width: 1440px;
+    font-family: 'Raleway', sans-serif;
+}
+main {
+    
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh auto;
+    display: grid;
+    
+    
+}
+.jeremey{
+   
+    border-radius: 10px;
+    grid-row: 1 / -1;
+    background-color: hsl(235, 46%, 20%);
+}
+.avatar--section{
+    display:flex;
+    flex-direction: column;
+    background-color:hsl(246, 80%, 60%);
+    height: 70%;
+    border-radius: 10px;
+    color: white;
+    padding: 40px 20px 60px 20px;
+}
+.avatar {
+    height: 5em;
+    width: 5em;
+    border: 1.5px solid white;
+    border-radius: 50px;
+  
+}
+.detail{
+
+    padding-top: 30px;
+    padding-left: 10px;
+    font-weight: normal;
+
+}
+p {
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+.schedule{
+    color: white;
+    padding: 20px 30px 20px;
+}
+    .btn {
+        font-size: 1rem;
+        background: none;
+        border: none;
+        color: hsl(236, 100%, 87%);
+    }
+    
+    .btn:hover {
+        color: white;
+    }
+    
+    .btn--active {
+        color: white;
+    }
+    .daily {
+        
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+    }
+    
+    .daily--active {
+        display: flex;
+    }
+    
+    .weekly {
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+    
+    }
+    
+    .weekly--active {
+        display: flex;
+    
+    }
+    
+    .monthly {
+        justify-content: space-between;
+        align-items: center;
+        display:none;
+    }
+    
+    .monthly--active {
+        display: flex;
+    
+    }
+    .current {
+        font-size: 2rem;
+        font-weight: 300;
+    
+    }
+    
+    .previous {
+        font-weight: 300;
+        font-size: .8rem;
+        color: hsl(236, 100%, 87%);
+    }
+/*individual container*/
+.Work {
+    border-radius: 10px;
+    background: hsl(15, 100%, 70%) url(/images/icon-work.svg) no-repeat 222px -10px;
+
+}
+
+.Play {
+    border-radius: 10px;
+    background: hsl(195, 74%, 62%) url(/images/icon-play.svg) no-repeat 222px -5px;
+
+}
+
+.Study {
+    border-radius: 10px;
+    background: hsl(348, 100%, 68%) url(/images/icon-study.svg) no-repeat 223px -5px;
+
+}
+
+.Exercise {
+    border-radius: 10px;
+    background: hsl(145, 58%, 55%) url(/images/icon-exercise.svg) no-repeat 220px -2px;
+
+}
+
+.Social {
+    border-radius: 10px;
+    background: hsl(264, 64%, 52%) url(/images/icon-social.svg) no-repeat 230px -18px;
+
+}
+
+.Self-care {
+    border-radius: 10px;
+    background: hsl(43, 84%, 65%) url(/images/icon-self-care.svg) no-repeat 233px -16px;
+
+}
+
+
+.routine--container {
+    border-radius: 10px;
+    
+}
+
+   
+.routine--info{
+    position: relative;
+    top: 20%;
+    background-color: hsl(235, 46%, 20%);
+    height: 80%;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+}
+
