@@ -29,7 +29,6 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site](https://efs0-cod3.github.io/time_track/)
 
 ## My process
 
@@ -39,7 +38,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+
 
 ### What I learned
 First time using JSON. great experience.
@@ -50,6 +49,7 @@ JS
 ### Useful resources
 W3
 MDN
+stackoverflow
 
 ## Author
 
