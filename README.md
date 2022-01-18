@@ -27,7 +27,9 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 
-### Links
+### Responsiveness
+
+Only Mobile  and desktop responsive  but not in other screen devices
 
 
 ## My process
