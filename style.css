@@ -9,18 +9,19 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 main {
-    
     width: 80vw;
     height: 80vh;
-    margin: 10vh auto;
+    margin: 100px auto;
     display: grid;
-    
+    gap: 15px;
+    grid-template-areas: "jeremy status";
     
 }
 .jeremey{
    
     border-radius: 10px;
-    grid-row: 1 / -1;
+    width: 20vw;
+    height: 100%;
     background-color: hsl(235, 46%, 20%);
 }
 .avatar--section{
@@ -32,6 +33,11 @@ main {
     color: white;
     padding: 40px 20px 60px 20px;
 }
+.schedule{
+    color: white;
+    padding: 20px 30px 20px;
+}
+
 .avatar {
     height: 5em;
     width: 5em;
@@ -50,126 +56,206 @@ p {
     opacity: 0.5;
     padding-bottom: 20px;
 }
-.schedule{
+
+.btn {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: hsl(236, 100%, 87%);
+}
+
+.btn:hover {
     color: white;
-    padding: 20px 30px 20px;
 }
-    .btn {
-        font-size: 1rem;
-        background: none;
-        border: none;
-        color: hsl(236, 100%, 87%);
-    }
+
+.btn--active {
+    color: white;
+}
+.routine--container {
     
-    .btn:hover {
-        color: white;
-    }
+    height: 39vh;
+    border-radius: 10px;
+    color: white;
     
-    .btn--active {
-        color: white;
-    }
-    .daily {
+     
+}
+.routine--info{
+    
+    background-color: hsl(235, 46%, 20%);
+    height: 30vh;
+    margin-top: 56px;
+    border-radius: 10px;
+    
+    
+}
+    
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    
+}
+
+
+.daily {
         
-        justify-content: space-between;
-        align-items: center;
-        display: none;
-    }
-    
-    .daily--active {
-        display: flex;
-    }
-    
-    .weekly {
-        justify-content: space-between;
-        align-items: center;
-        display: none;
-    
-    }
-    
-    .weekly--active {
-        display: flex;
-    
-    }
-    
-    .monthly {
-        justify-content: space-between;
-        align-items: center;
-        display:none;
-    }
-    
-    .monthly--active {
-        display: flex;
-    
-    }
-    .current {
-        font-size: 2rem;
-        font-weight: 300;
-    
-    }
-    
-    .previous {
-        font-weight: 300;
-        font-size: .8rem;
-        color: hsl(236, 100%, 87%);
-    }
-/*individual container*/
-.Work {
-    border-radius: 10px;
-    background: hsl(15, 100%, 70%) url(/images/icon-work.svg) no-repeat 222px -10px;
+    justify-content: space-between;
+    padding-left: 10%;
+    display: none;
+}
+
+.daily--active {
+    display: flex;
+    flex-direction: column;
 
 }
 
-.Play {
-    border-radius: 10px;
-    background: hsl(195, 74%, 62%) url(/images/icon-play.svg) no-repeat 222px -5px;
+.weekly {
+    justify-content: space-between;
+    padding-left: 10%;
+    display: none;
 
+}
+
+.weekly--active {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.monthly {
+    justify-content: space-between;
+    padding-left: 10%;
+    display:none;
+}
+
+.monthly--active {
+    display: flex;
+    flex-direction: column;
+
+}
+.current {
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+.previous {
+    font-weight: 300;
+    font-size: .8rem;
+    color: hsl(236, 100%, 87%);
+}
+.Work {
+    grid-area: work;
+    border-radius: 10px;
+    background: hsl(15, 100%, 70%) url(images/icon-work.svg) no-repeat 222px -10px;
+
+
+
+
+}
+.Play {
+    grid-area: play;
+    border-radius: 10px;
+    background: hsl(195, 74%, 62%) url(images/icon-play.svg) no-repeat 222px -5px;
+
+    
 }
 
 .Study {
+    grid-area: study;
     border-radius: 10px;
     background: hsl(348, 100%, 68%) url(/images/icon-study.svg) no-repeat 223px -5px;
 
 }
 
 .Exercise {
+    grid-area: exercise;
     border-radius: 10px;
     background: hsl(145, 58%, 55%) url(/images/icon-exercise.svg) no-repeat 220px -2px;
 
 }
 
 .Social {
+    grid-area: social;
     border-radius: 10px;
     background: hsl(264, 64%, 52%) url(/images/icon-social.svg) no-repeat 230px -18px;
 
 }
 
 .Self-care {
+    grid-area: self-care;
     border-radius: 10px;
     background: hsl(43, 84%, 65%) url(/images/icon-self-care.svg) no-repeat 233px -16px;
-
-}
-
-
-.routine--container {
-    border-radius: 10px;
-    
-}
-
    
-.routine--info{
-    position: relative;
-    top: 20%;
-    background-color: hsl(235, 46%, 20%);
-    height: 80%;
-    border-radius: 10px;
-    color: white;
+
+}
+.status{
+    display: grid;
+    height: 40vh;
+    width: 60vw;
+    gap: 15px;
+    grid-template-areas: "work play study"
+                          "exercise social self-care";
+}
+.stats--title-name{
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 
-.card--header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    font-size: 18px;
+@media screen and (max-width: 767.98px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .jeremey{
+        width: 100%;
+    }
+    .status {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .daily {
+        
+        justify-content: space-between;
+        padding-left: 10%;
+        display: none;
+    }
+    
+    .daily--active {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .weekly {
+        justify-content: space-between;
+        padding-left: 10%;
+        display: none;
+    
+    }
+    
+    .weekly--active {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .monthly {
+        justify-content: space-between;
+        padding-left: 10%;
+        display:none;
+    }
+    
+    .monthly--active {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .routine--info {
+        height: 20vh;  
+    }
 }
 

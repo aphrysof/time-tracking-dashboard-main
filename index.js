@@ -118,33 +118,34 @@ const routine = document.getElementsByClassName('status')[0];
 
 stats.forEach((item) => {
     const card = document.createElement('div');
-    card.classList.add("status", `${item.title}`);
+    card.classList.add("routine--container", `${item.title}`);
     const content = `
-     
-      <div class="routine--container">
+    
+     <div class="routine--container ${item.title}">
         <div class = "routine--info">
-        <div class = "card-header">
-        <h2 class = "stats--title-name ${item.title}">${item.title}</h2>
-        <p>...</p>
+            <div class = "card--header ">
+              <h2 class = "card--header-names">${item.title}</h2>
+                  <p>...</p>
+            </div>
+           <div class = hours--section">
+              <div class= "daily ">
+                <p class = "current">${item.timeframes.daily.current}hrs</p>
+                <p class = "previous">Yesterday - ${item.timeframes.daily.previous}hrs</p>
+              </div>
+              <div class= "weekly weekly--active">
+                 <p class = "current">${item.timeframes.weekly.current}hrs</p>
+                 <p class = "previous">Last Week- ${item.timeframes.weekly.previous}hrs</p>
+              </div>
+              <div class= "monthly">
+                <p class = "current">${item.timeframes.monthly.current}hrs</p>
+                <p class = "previous">Last Month - ${item.timeframes.monthly.previous}hrs</p>
+              </div>
+          </div>
       </div>
-      <div class = hours--section">
-      <!-- daily -->
-        <div class= "daily ">
-            <p class = "current">${item.timeframes.daily.current}hrs</p>
-            <p class = "previous">Yesterday - ${item.timeframes.daily.previous}hrs</p>
-        </div>
-        <div class= "weekly weekly--active">
-            <p class = "current">${item.timeframes.weekly.current}hrs</p>
-            <p class = "previous">Last Week- ${item.timeframes.weekly.previous}hrs</p>
-        </div>
-        <div class= "monthly">
-            <p class = "current">${item.timeframes.monthly.current}hrs</p>
-            <p class = "previous">Last Month - ${item.timeframes.monthly.previous}hrs</p>
-        </div>
-      </div>
-        </div>
-          
-      </div>
+    </div>
+
+    
+    
   
     `;
     
